@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">MinnieJasonWedding</string>
+    <string name="wedding_studio">婚紗</string>
+    <string name="photography">攝影</string>
+    <string name="wedding_party">喜宴</string>
+    <string name="wedding_invitation">喜帖</string>
 </resources>
