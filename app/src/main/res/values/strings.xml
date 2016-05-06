@@ -4,4 +4,5 @@
     <string name="photography">攝影</string>
     <string name="wedding_party">喜宴</string>
     <string name="wedding_invitation">喜帖</string>
+    <string name="title_activity_photo_view">PhotoViewActivity</string>
 </resources>
