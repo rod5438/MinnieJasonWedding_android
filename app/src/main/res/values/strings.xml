@@ -1,8 +1,10 @@
 <resources>
     <string name="app_name">MinnieJasonWedding</string>
-    <string name="wedding_studio">婚紗</string>
-    <string name="photography">攝影</string>
-    <string name="wedding_party">喜宴</string>
-    <string name="wedding_invitation">喜帖</string>
+    <string name="wedding_party_taipei">台北</string>
+    <string name="wedding_party_taitung">台東</string>
+    <string name="wedding_photo">畫廊</string>
+    <string name="camera">合照</string>
     <string name="title_activity_photo_view">PhotoViewActivity</string>
+    <string name="title_activity_wedding_party_taipei">台北結婚資訊</string>
+    <string name="title_activity_wedding_party_taitung">台東結婚資訊</string>
 </resources>

@@ -1,15 +1,17 @@
 package com.jason.minniejasonwedding;
 
+import android.app.ActionBar;
+import android.app.Activity;
+import android.os.Bundle;
 import android.support.v4.view.PagerAdapter;
 import android.support.v4.view.ViewPager;
-import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 
 import uk.co.senab.photoview.PhotoView;
 
-public class PhotoViewActivity extends AppCompatActivity {
+public class PhotoViewActivity extends Activity {
 
     private ViewPager mViewPager;
 
@@ -18,9 +20,24 @@ public class PhotoViewActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_photo_view);
 
+        ActionBar actionBar = getActionBar();
+        actionBar.setDisplayHomeAsUpEnabled(true);
+
         mViewPager = (ViewPager) findViewById(R.id.view_pager);
         setContentView(mViewPager);
         mViewPager.setAdapter(new SamplePagerAdapter());
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
+            case android.R.id.home:
+                // app icon in action bar clicked; goto parent activity.
+                this.finish();
+                return true;
+            default:
+                return super.onOptionsItemSelected(item);
+        }
     }
 
     static class SamplePagerAdapter extends PagerAdapter {

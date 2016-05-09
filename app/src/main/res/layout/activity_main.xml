@@ -8,6 +8,7 @@
     android:background="@android:color/white"
     tools:context="com.jason.minniejasonwedding.MainActivity">
 
+
     <LinearLayout
         android:layout_width="300dp"
         android:layout_height="300dp"
@@ -28,20 +29,22 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:text="@string/wedding_studio"
-                android:id="@+id/wedding_studio"
+                android:text="@string/wedding_party_taipei"
+                android:id="@+id/wedding_party_taipei"
                 android:layout_gravity="center_vertical"
                 android:background="@drawable/book_yellow"
-                android:layout_margin="5dp" />
+                android:layout_margin="5dp"
+                android:onClick="onTaipeiWeddingPartyButtonClick"/>
             <Button
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:text="@string/photography"
-                android:id="@+id/photography"
+                android:text="@string/wedding_party_taitung"
+                android:id="@+id/wedding_party_taitung"
                 android:layout_gravity="center_vertical"
                 android:background="@drawable/book_green"
-                android:layout_margin="5dp" />
+                android:layout_margin="5dp"
+                android:onClick="onTaitungWeddingPartyButtonClick"/>
 
         </LinearLayout>
 
@@ -55,8 +58,8 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:text="@string/wedding_party"
-                android:id="@+id/wedding_party"
+                android:text="@string/wedding_photo"
+                android:id="@+id/wedding_photo"
                 android:layout_gravity="center_vertical"
                 android:background="@drawable/book_blue"
                 android:layout_margin="5dp"
@@ -65,8 +68,8 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:text="@string/wedding_invitation"
-                android:id="@+id/wedding_invitation"
+                android:text="@string/camera"
+                android:id="@+id/camera"
                 android:layout_gravity="center_vertical"
                 android:background="@drawable/book_red"
                 android:layout_margin="5dp" />
